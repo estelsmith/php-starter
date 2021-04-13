@@ -14,7 +14,7 @@
         "dev:down": "docker-compose -f docker-compose.yml down --remove-orphans",
         "dev:logs": "docker-compose -f docker-compose.yml logs --follow",
         "dev:restart": "yarn dev:down; yarn dev:up",
-        "dev:shell": "docker-compose -f docker-compose.yml exec php /bin/sh < /dev/tty",
+        "dev:shell": "docker-compose -f docker-compose.yml exec php /bin/sh",
         "dev:status": "docker-compose -f docker-compose.yml ps"
     }
 }
