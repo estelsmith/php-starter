@@ -1,0 +1,20 @@
+{
+    "name": "esmith-php-starter",
+    "version": "0.0.1",
+    "description": "Get started using PHP FAST with Docker!!",
+    "repository": "https://github.com/estelsmith/php-starter",
+    "author": "Estel Smith <estel.smith@gmail.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "dev:exec": "docker-compose -f docker-compose.yml exec php",
+        "dev:up": "docker-compose -f docker-compose.yml up --build --remove-orphans --detach",
+        "dev:destroy": "yarn dev:down --volumes",
+        "dev:down": "docker-compose -f docker-compose.yml down --remove-orphans",
+        "dev:logs": "docker-compose -f docker-compose.yml logs --follow",
+        "dev:restart": "yarn dev:down; yarn dev:up",
+        "dev:shell": "docker-compose -f docker-compose.yml exec php /bin/sh < /dev/tty",
+        "dev:status": "docker-compose -f docker-compose.yml ps"
+    }
+}
