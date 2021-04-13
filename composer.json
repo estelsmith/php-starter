@@ -1,0 +1,13 @@
+{
+    "name": "esmith/php-starter",
+    "description": "Get started using PHP FAST with Docker!!",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Estel Smith",
+            "email": "estel.smith@gmail.com"
+        }
+    ],
+    "require": {}
+}
