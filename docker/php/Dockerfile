@@ -16,6 +16,6 @@ COPY --chown=root:root ./etc/php8/php-fpm.conf /etc/php8/php-fpm.conf
 COPY --chown=root:root ./etc/php8/php-fpm.d/www.conf /etc/php8/php-fpm.d/www.conf
 
 EXPOSE 9000
-WORKDIR /srv
+WORKDIR /var/www/html
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["/usr/sbin/php-fpm8", "--fpm-config", "/etc/php8/php-fpm.conf"]
